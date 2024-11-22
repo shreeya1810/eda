@@ -4,7 +4,7 @@ Here’s the **copy-pasteable README file** for your project:
 
 # Exploratory Data Analysis (EDA) Project
 ### **Course Code**: BCSE331L  
-This project is a comprehensive implementation of various **EDA techniques** such as univariate analysis, bivariate analysis, clustering, dimensionality reduction, and model development using Python. It fulfills the requirements of the **EDA Assignment** for the course **BCSE331L**.
+This project comprehensively implements various **EDA techniques** such as univariate analysis, bivariate analysis, clustering, dimensionality reduction, and model development using Python. It fulfills the requirements of the **EDA Assignment** for the course **BCSE331L**.
 
 ---
 
