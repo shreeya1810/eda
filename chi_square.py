@@ -1,12 +1,7 @@
+from load_data import load_data
 from scipy.stats import chi2_contingency
-
-# Example Data
-data = pd.DataFrame({
-    "Gender": ["Male", "Male", "Female", "Female", "Female"],
-    "Likes_Sports": ["Yes", "No", "Yes", "Yes", "No"]
-})
-
-# Contingency Table
-contingency_table = pd.crosstab(data["Gender"], data["Likes_Sports"])
+data = load_data()
+# Create a contingency table
+contingency_table = pd.crosstab(data['species'], data['sepal_length_binned'])
 chi2, p, dof, expected = chi2_contingency(contingency_table)
-print(f"Chi-Square Statistic: {chi2}, p-value: {p}")
+print("Chi-square Test:\nChi2:", chi2, "p-value:", p)

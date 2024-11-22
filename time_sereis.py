@@ -1,3 +1,5 @@
+from load_data import load_data
+from load_data import load_data
 import pandas as pd
 import matplotlib.pyplot as plt
 

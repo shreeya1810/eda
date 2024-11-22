@@ -1,3 +1,4 @@
+from load_data import load_data
 import seaborn as sns
 import matplotlib.pyplot as plt
 

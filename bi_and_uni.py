@@ -1,11 +1,16 @@
+from load_data import load_data
+import seaborn as sns
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 
-# 3D Scatter
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-ax.scatter(data['sepal_length'], data['sepal_width'], data['petal_length'], c='r', marker='o')
-ax.set_xlabel('Sepal Length')
-ax.set_ylabel('Sepal Width')
-ax.set_zlabel('Petal Length')
+# Load the dataset
+data = load_data()
+
+# Univariate Analysis
+sns.histplot(data['sepal_length'], kde=True, bins=10)
+plt.title("Univariate Analysis: Sepal Length Distribution")
+plt.show()
+
+# Bivariate Analysis
+sns.scatterplot(x='sepal_length', y='sepal_width', hue='species', data=data)
+plt.title("Bivariate Analysis: Sepal Length vs Sepal Width")
 plt.show()

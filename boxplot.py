@@ -1,10 +1,5 @@
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Sample dataset
-data = {'A': [10, 20, 30, 100, 40], 'B': [5, 15, 25, 50, 10]}
-sns.boxplot(data=list(data.values()))
-plt.title("Boxplot for Outlier Detection")
-plt.xlabel("Features")
-plt.ylabel("Values")
+from load_data import load_data
+data = load_data()
+sns.boxplot(x='species', y='sepal_length', data=data)
+plt.title("Boxplot: Sepal Length by Species")
 plt.show()

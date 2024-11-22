@@ -1,3 +1,4 @@
+from load_data import load_data
 import matplotlib.pyplot as plt
 
 # Data

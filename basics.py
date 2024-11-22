@@ -1,14 +1,9 @@
-import pandas as pd
+from load_data import load_data
+import seaborn as sns
 
-# Example DataFrame
-data = pd.DataFrame({
-    "Age": [25, 30, 35, 40],
-    "Salary": [3000, 4000, 5000, 6000],
-    "Gender": ["Male", "Female", "Female", "Male"]
-})
+# Load dataset
+data = sns.load_dataset("iris")
 
-# Data Types
+# Data types and summary
 print("Data Types:\n", data.dtypes)
-
-# Summary statistics
-print("Summary Statistics:\n", data.describe(include='all'))
+print("\nSummary Statistics:\n", data.describe(include='all'))

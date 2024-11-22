@@ -1,15 +1,8 @@
+from load_data import load_data
 # Lists
-my_list = [1, 2, 3, 4]
-print("List:", my_list)
+my_list = list(data['species'].unique())
+print("List of unique species:", my_list)
 
-# Tuples
-my_tuple = (5, 6, 7, 8)
-print("Tuple:", my_tuple)
-
-# Dictionary
-my_dict = {"name": "Alice", "age": 25}
-print("Dictionary:", my_dict)
-
-# Set
-my_set = {1, 2, 2, 3, 4}
-print("Set:", my_set)
+# Dictionaries
+species_count = data['species'].value_counts().to_dict()
+print("Species count:", species_count)

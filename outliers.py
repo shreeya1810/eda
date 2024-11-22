@@ -1,3 +1,4 @@
+from load_data import load_data
 from scipy.stats import zscore
 
 # Data

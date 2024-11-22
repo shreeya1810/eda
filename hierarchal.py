@@ -1,14 +1,8 @@
+from load_data import load_data
 from scipy.cluster.hierarchy import dendrogram, linkage
-import matplotlib.pyplot as plt
-
-# Data
-data = [[1, 2], [3, 4], [5, 6], [7, 8]]
-
-# Hierarchical clustering
-linked = linkage(data, method='ward')
-
-# Dendrogram
+data = load_data()
+Z = linkage(data[['sepal_length', 'sepal_width']], method='ward')
 plt.figure(figsize=(10, 7))
-dendrogram(linked)
-plt.title("Dendrogram")
+dendrogram(Z)
+plt.title("Hierarchical Clustering Dendrogram")
 plt.show()

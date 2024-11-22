@@ -1,12 +1,7 @@
-import numpy as np
-import pandas as pd
-
-# Data
-data = {'X': [1, 2, 3, 4, 5], 'Y': [5, 4, 3, 2, 1]}
-df = pd.DataFrame(data)
-
+from load_data import load_data
 # Covariance
-print("Covariance:\n", df.cov())
+data = load_data()
+print("Covariance Matrix:\n", data[['sepal_length', 'sepal_width']].cov())
 
 # Correlation
-print("Correlation:\n", df.corr())
+print("Correlation Matrix:\n", data[['sepal_length', 'sepal_width']].corr())

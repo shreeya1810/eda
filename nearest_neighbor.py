@@ -1,7 +1,8 @@
+from load_data import load_data
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
-
+data = load_data()
 # Input data
 X = [[1, 2], [2, 3], [3, 4], [5, 6], [6, 7]]
 y = [0, 0, 0, 1, 1]
