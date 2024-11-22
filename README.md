@@ -157,11 +157,6 @@ The project requires the following Python libraries:
 ---
 
 ## **Contact**
-For any questions, reach out to:
 - **Name**: Shreeya Gokhale
-- **Email**: [your_email@example.com]
+- **Email**: [shreeyagokhale18@gmail.com]
 - **Course**: BCSE331L (Exploratory Data Analysis)
-
----
-
-Feel free to copy and paste this file into your `README.md`. Let me know if you need any further modifications!
